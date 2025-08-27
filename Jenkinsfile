@@ -27,7 +27,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'npm run test'
+                sh 'Xvfb :99 & export DISPLAY=:99 && npx cypress run --component'
             }
         }
         stage('Deploy to Staging') {
