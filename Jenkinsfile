@@ -33,7 +33,7 @@ pipeline {
         stage('Deploy to Staging') {
             steps {
                 sshagent(['vue-nginx-1']) {
-                    sh "scp -r dist/* ${STAGING_SERVER}:${REMOTE_PATH}/"
+                 sh "scp -o StrictHostKeyChecking=no -r dist/* ${STAGING_SERVER}:${REMOTE_PATH}/"
                 }
             }
         }
