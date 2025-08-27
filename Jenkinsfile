@@ -30,6 +30,11 @@ pipeline {
                 sh 'Xvfb :99 & export DISPLAY=:99 && npx cypress run --component'
             }
         }
+        stage('Archive Build') {
+            steps {
+                archiveArtifacts artifacts: 'dist/**', fingerprint: true
+            }
+        }
         stage('Deploy to Staging') {
             steps {
                 sshagent(['vue-nginx-1']) {
