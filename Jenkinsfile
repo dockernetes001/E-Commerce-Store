@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/ezbrush/E-Commerce-Store' // cambia tu repo
+                git branch: 'main', url: 'https://github.com/ezbrush/E-Commerce-Store'
             }
         }
         stage('Install Dependencies') {
