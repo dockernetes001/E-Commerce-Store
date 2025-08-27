@@ -27,7 +27,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'Xvfb :99 & export DISPLAY=:99 && npx cypress run --component'
+                sh 'npx cypress run --component --headless'
             }
         }
         stage('Archive Build') {
