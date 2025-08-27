@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "npx cypress run --component"
   },
   "dependencies": {
     "@unhead/vue": "^1.7.4",
