@@ -7,7 +7,9 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/ezbrush/E-Commerce-Store'
+                withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
+                    sh 'git clone https://$GITHUB_TOKEN@github.com/ezbrush/E-Commerce-Store.git -b main'
+                }
             }
         }
         stage('Install Dependencies') {
