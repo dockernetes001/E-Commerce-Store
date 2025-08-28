@@ -13,7 +13,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
-                    sh 'git clone https://$GITHUB_TOKEN@github.com/ezbrush/E-Commerce-Store.git -b main'
+                    git branch: 'main', url: "https://${GITHUB_TOKEN}@github.com/ezbrush/E-Commerce-Store.git"
                 }
             }
         }
