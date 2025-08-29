@@ -1,29 +1,4 @@
-# VUE.JS E-Commerce Project - Mechanical Keyboard Store
-
-## Table of contents
-
-- [VUE.JS E-Commerce Project - Mechanical Keyboard Store](#vuejs-e-commerce-project---mechanical-keyboard-store)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [:mount\_fuji: The Challenge](#mount_fuji-the-challenge)
-    - [:camera: Screenshot](#camera-screenshot)
-    - [:link: Links](#link-links)
-  - [My process](#my-process)
-    - [:wrench: Built with](#wrench-built-with)
-    - [:bulb: What I've learned](#bulb-what-ive-learned)
-      - [Vue Router](#vue-router)
-      - [State management (Vuex / Pinia / Vueuse)](#state-management-vuex--pinia--vueuse)
-      - [Typescript](#typescript)
-      - [Tailwind](#tailwind)
-      - [Cypress Testing](#cypress-testing)
-      - [Search Engine Optimization (Open Graph / Meta Tags / Unhead / HTML Semantics)](#search-engine-optimization-open-graph--meta-tags--unhead--html-semantics)
-      - [Page Optimization](#page-optimization)
-      - [Code and project cleanliness](#code-and-project-cleanliness)
-      - [Miscellaneous](#miscellaneous)
-    - [:mountain\_bicyclist: Continued development](#mountain_bicyclist-continued-development)
-    - [:cake: Acknowledgements \& Useful resources](#cake-acknowledgements--useful-resources)
-  - [Author](#author)
-
+# VUE.JS E-Commerce Project 
 
 ## Overview
 
@@ -37,19 +12,7 @@ Shop owners can easily add new products through the products file. Subsequently,
 
 "Happy" and "unhappy" customer purchase flows have E2E tests, the navbar has implementation tests and the cart some component tests to gain a small impression of Cypress's abilities. 
 
-### :camera: Screenshot
-
-Some animations are not presented correctly in the full page screenshot, so make sure to visit the web app [here](https://e-commerce-store-amber-zeta.vercel.app/).
-
-![Landing Page](./screenshots/e-commerce-store-amber-zeta.vercel.app_(1080p).png)
-
-![Keyboard Product Page](./screenshots/e-commerce-store-amber-zeta.vercel.app_keyboards_0(1080p).png)
-
-### :link: Links
-
-You can find a live deployment of this project [right here!](https://e-commerce-store-amber-zeta.vercel.app/)
-
-## My process
+## Process
 
 ### :wrench: Built with
 
