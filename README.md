@@ -1,5 +1,22 @@
 # VUE.JS E-Commerce Project 
 
+## Project setup
+
+```bash
+$ npm install
+```
+
+## Compile and run the project
+
+```bash
+# development
+$ npm run dev
+
+# production mode
+$ npm run build
+```
+
+
 ## Overview
 
 ### :mount_fuji: The Challenge
