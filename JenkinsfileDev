@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        STAGING_SERVER = 'user@vue-nginx-1'
+        STAGING_SERVER = 'user@vue-nginx-2'
         REMOTE_PATH = '/var/www/html'
     }
     stages {
@@ -13,7 +13,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
-                    sh 'git clone https://$GITHUB_TOKEN@github.com/ezbrush/E-Commerce-Store.git .'
+                    sh 'git clone -b develop https://$GITHUB_TOKEN@github.com/ezbrush/E-Commerce-Store.git .'
                 }
             }
         }
@@ -52,7 +52,7 @@ pipeline {
         stage('Validate Deployment') {
             steps {
                 sh 'sleep 10'
-                sh 'curl --fail http://vue-nginx-1:80 || exit 1'
+                sh 'curl --fail http://vue-nginx-2:80 || exit 1'
             }
         }
     }
