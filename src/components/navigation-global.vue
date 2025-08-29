@@ -65,7 +65,7 @@ function hideHamburger(): void {
 				class="text-3xl font-extrabold tracking-tight antialiased transition duration-300 hover:scale-110 hover:text-k-main"
 				data-test="nav-logo"
 			>
-				KIIIBS DEV 4
+				KIIIBS DEV 5
 			</router-link>
 
 			<nav class="hidden tracking-widest lg:flex lg:gap-8">
