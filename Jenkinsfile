@@ -9,7 +9,7 @@ pipeline {
             steps {
                 cleanWs()
             }
-        }  
+        }    
         stage('Clone Repository') {
             steps {
                 withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
